@@ -34,7 +34,7 @@ const instrument = async () => ({ Component: (await import('../pages/market')).I
 const agent = async () => ({ Component: (await import('../pages/agent')).AgentPage });
 const profile = async () => ({ Component: (await import('../pages/profile')).ProfilePage });
 const squad = async () => ({ Component: (await import('../pages/squads')).SquadsPage });
-export const router = createBrowserRouter([
+const routes = [
   {
     element: <AppShell />,
     errorElement: <RouteError />,
@@ -89,4 +89,5 @@ export const router = createBrowserRouter([
       { path: '*', element: <NotFound /> },
     ],
   },
-]);
+];
+export const router = createBrowserRouter(routes, { basename: import.meta.env.BASE_URL });

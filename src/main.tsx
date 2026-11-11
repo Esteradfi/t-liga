@@ -9,7 +9,11 @@ async function bootstrap() {
     const { resetMockDb } = await import('./mocks/db');
     resetMockDb();
   }
-  await worker.start({ onUnhandledRequest: 'bypass', quiet: true });
+  await worker.start({
+    onUnhandledRequest: 'bypass',
+    quiet: true,
+    serviceWorker: { url: `${import.meta.env.BASE_URL}mockServiceWorker.js` },
+  });
   ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
       <AppProviders>
