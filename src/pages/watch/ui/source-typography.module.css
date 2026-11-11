@@ -1,0 +1,73 @@
+.page > div:first-child h1 {
+  line-height: 1.2;
+}
+.page > div:first-child p {
+  line-height: 1.55;
+  margin-top: 8px;
+}
+.page h2 {
+  line-height: 1.28;
+}
+
+.followCard {
+  padding: 19px !important;
+  border-radius: 23px !important;
+}
+.followCard > div:first-child {
+  min-height: 49.89px;
+}
+.followCard > div:first-child a > h3,
+.followCard > div:first-child a > b {
+  display: block;
+  font-size: 16px !important;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+.followCard > div:first-child a > small {
+  font-size: 12px !important;
+  line-height: 1.5;
+}
+.returnValue {
+  font-size: 25px;
+  line-height: 1.45;
+  font-weight: 700;
+  margin-top: 25px;
+}
+.followCard > div:last-child > button {
+  min-height: 42px;
+  padding: 11px 14px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+.followCard > div:last-child > a {
+  min-height: 36px;
+  padding: 7px 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.page > div:first-child {
+  margin-bottom: 20px;
+}
+.feed {
+  margin-top: 20px;
+}
+.feedBubble {
+  max-width: 94%;
+  padding: 13px 15px;
+  border-radius: 18px;
+  background: #f2f4f7;
+  line-height: 1.6;
+  font-size: 13px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.feedBubble p {
+  margin: 13px 0;
+}
+.feedBubble > span {
+  font-size: 12px;
+}
+:global(html[data-theme='dark']) .feedBubble {
+  background: #353b45;
+}

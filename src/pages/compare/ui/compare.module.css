@@ -1,0 +1,120 @@
+.formCard {
+  padding: 19px !important;
+  border-radius: 23px !important;
+}
+.formCard form {
+  gap: 13px;
+}
+.formCard form > div {
+  gap: 0;
+}
+.formCard form label {
+  font-size: 11px;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.formCard form > div:nth-child(2) {
+  gap: 14px;
+}
+.formCard form > div:nth-child(2) label {
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+.formCard input,
+.formCard select {
+  font-size: 16px;
+  line-height: 1.45;
+  padding: 12px;
+  height: 46px;
+  min-height: 46px;
+}
+.formCard form > button {
+  font-size: 13px;
+  min-height: 45px;
+  margin-top: 3px;
+}
+.formCard > p {
+  margin: 12px 0 !important;
+}
+
+.page > div:first-child {
+  margin-bottom: 20px;
+}
+.empty {
+  padding: 24px 20px;
+  text-align: center;
+  border: 1px dashed #d6dce5;
+  border-radius: 19px;
+  margin-top: 14px;
+}
+.empty h3 {
+  font-size: 14px;
+  margin: 0 0 7px;
+}
+.empty p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+.resultBubble {
+  max-width: 100%;
+  padding: 13px 15px;
+  border-radius: 18px;
+  background: #f2f4f7;
+  line-height: 1.6;
+  font-size: 13px;
+  margin: 13px 0;
+  overflow-wrap: anywhere;
+}
+.resultBubble p {
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+.resultBubble > span {
+  font-size: 11px;
+}
+.explanation {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 13px 0;
+}
+:global(html[data-theme='dark']) .resultBubble {
+  background: #353b45;
+}
+.observation {
+  background: #edf5ef;
+  border-radius: 14px;
+  padding: 14px;
+  margin-top: 13px;
+}
+.observation h3 {
+  font-size: 13px;
+  margin: 0;
+}
+.observation p {
+  font-size: 11px;
+  color: #668371;
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+.observation button {
+  background: none;
+  color: #587560;
+  font-size: 11px;
+  padding: 10px 0 0;
+  border: 0;
+  cursor: pointer;
+}
+.observationControls {
+  margin-top: 10px;
+  font-size: 10px;
+  color: var(--muted);
+}
+:global(html[data-theme='dark']) .observation {
+  background: #2d4034;
+}
+:global(html[data-theme='dark']) .observation p {
+  color: #bfd4c4;
+}

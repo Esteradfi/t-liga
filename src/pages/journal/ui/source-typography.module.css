@@ -1,0 +1,160 @@
+.page > div:first-child h1 {
+  line-height: 1.2;
+}
+.page > div:first-child p {
+  line-height: 1.55;
+  margin-top: 8px;
+}
+.page h2 {
+  line-height: 1.28;
+}
+.event {
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr) 12px;
+  gap: 9px;
+  align-items: start;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  text-align: left;
+  width: 100%;
+  color: var(--text);
+  cursor: pointer;
+}
+.event:last-child {
+  border: 0;
+}
+.eventIcon {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--bg);
+  font-size: 12px;
+  color: #758497;
+}
+.eventTitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: block;
+}
+.eventMeta {
+  font-size: 9px;
+  line-height: 1.5;
+  color: var(--muted);
+  display: block;
+  margin-top: 4px;
+}
+.eventArrow {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.detailLine {
+  margin: 14px 0;
+}
+.detailLine small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 5px;
+}
+.detailLine p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.historyList {
+  background: var(--card);
+  padding: 2px 16px;
+  border-radius: 19px;
+}
+.filters {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 14px;
+  flex-wrap: wrap;
+}
+.filters button {
+  border: 0;
+  padding: 8px 11px;
+  background: var(--card);
+  color: var(--muted);
+  border-radius: 9px;
+  font-size: 10px;
+  min-height: 35px;
+  cursor: pointer;
+}
+.filters button[aria-pressed='true'] {
+  background: #fff3bf;
+  color: #7f6826;
+}
+:global(html[data-theme='dark']) .filters button[aria-pressed='true'] {
+  background: #514728;
+  color: #efdb96;
+}
+.caption {
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 10px 2px;
+}
+.shareCard {
+  background: #252830;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  min-height: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 23px;
+}
+.shareCard:after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border: 1px solid #ffffff0d;
+  border-radius: 50%;
+  right: -40px;
+  top: -10px;
+  box-shadow:
+    0 0 0 30px #ffffff03,
+    0 0 0 60px #ffffff02;
+  pointer-events: none;
+}
+.shareCard > span {
+  font-size: 12px;
+}
+.shareCard h2 {
+  font-size: 21px;
+  line-height: 1.3;
+  margin: 20px 0;
+}
+.shareMetrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.shareMetrics > b {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+.shareMetrics > strong {
+  font-size: 25px;
+  line-height: 1.45;
+  color: var(--green);
+}
+.shareCard > p {
+  font-size: 12px;
+  color: var(--muted);
+}

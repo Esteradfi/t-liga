@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" fill="none" role="img" aria-label="Платиновая Акула"><defs>
+ <linearGradient id="r-frame" x1="20" y1="5" x2="107" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#EEFFFF"/><stop offset=".3" stop-color="#A9D8D8"/><stop offset=".58" stop-color="#5F999F"/><stop offset=".8" stop-color="#EEFFFF"/><stop offset="1" stop-color="#A9D8D8"/></linearGradient>
+ <linearGradient id="r-field" x1="64" y1="12" x2="64" y2="132" gradientUnits="userSpaceOnUse"><stop stop-color="#315C63"/><stop offset="1" stop-color="#243841"/></linearGradient>
+ <linearGradient id="r-metal" x1="32" y1="28" x2="91" y2="111" gradientUnits="userSpaceOnUse"><stop stop-color="#EEFFFF"/><stop offset=".48" stop-color="#A9D8D8"/><stop offset="1" stop-color="#5F999F"/></linearGradient>
+ <linearGradient id="r-bright" x1="64" y1="62" x2="64" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#EEFFFF"/><stop offset="1" stop-color="#A9D8D8"/></linearGradient>
+ </defs><path d="M64 3 117 27 110 91 95 115 64 141 33 115 18 91 11 27 64 3Z" fill="url(#r-frame)"/>
+ <path d="M64 11 109 32 103 88 89 109 64 131 39 109 25 88 19 32 64 11Z" fill="url(#r-field)"/>
+ <path d="m64 3 53 24-8 5L64 11 19 32l-8-5L64 3Z" fill="#EEFFFF" fill-opacity=".72"/>
+ <path d="m18 91 15 24 31 26v-10l-25-22-14-21-7 3Z" fill="#5F999F" fill-opacity=".72"/>
+ <path d="m110 91-15 24-31 26v-10l25-22 14-21 7 3Z" fill="#EEFFFF" fill-opacity=".45"/>
+ <path d="m26 84 16-22 17-5 11-24 5 24 20 12 12 20-27 4-8 16-5-15-19-4-22 9 3-16-3 1Z" fill="url(#r-metal)"/>
+ <path d="m59 57 11-24 5 24-16 0Z" fill="#D7F2EF"/>
+ <path d="m26 84 35-9 34-6 12 20-27 4-8 16-5-15-19-4-22 9 3-16-3 1Z" fill="#91C1C6"/>
+ <path d="m33 84 28-9 34-6 10 16-33-2-17 3-22-2Z" fill="#DDF5F3"/>
+ <path d="m79 69 9 3-7 3-2-6Z" fill="#203E48"/>
+ <path d="m77 83 24 3-7 8-20-4 3-7Z" fill="#25464E"/>
+ <path d="m80 85 4 5 4-4 4 5 4-4" fill="#E8FFFF"/>
+ <path d="m60 73-4 8m11-10-4 8m11-10-4 8" stroke="#507F88" stroke-width="2.5"/>
+ <path d="m45 66-7-15 17 9-10 6Z" fill="#BEE5E3"/>
+ </svg>

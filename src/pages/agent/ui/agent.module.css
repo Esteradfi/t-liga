@@ -1,0 +1,506 @@
+.personas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.persona {
+  position: relative;
+  padding: 25px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text);
+}
+.persona b {
+  font-size: 22px;
+  display: block;
+  line-height: 1.3;
+}
+.persona small {
+  font-size: 12px;
+  color: var(--muted);
+  display: block;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+.chosen {
+  border-color: #e2bf46;
+  background: #fffbeb;
+}
+.check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #dce1e8;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #7c681d;
+}
+.chosen .check {
+  background: var(--yellow);
+  border-color: #ddc04e;
+}
+.start {
+  max-width: 340px;
+  margin-top: 22px;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  max-width: 1150px !important;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 0 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+}
+.header h1 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0;
+}
+.header small {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin-top: 4px;
+}
+.rules {
+  font-size: 11px;
+  margin: 8px 0;
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--line);
+}
+.rules summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 9px 0;
+  list-style: none;
+}
+.rules > div {
+  padding: 10px 0 15px;
+  font-size: 11px;
+  max-height: 160px;
+  overflow: auto;
+}
+.messages {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 8px 10px 8px 0;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.bubble {
+  max-width: 82%;
+  padding: 15px 17px;
+  background: var(--card);
+  font-size: 13px;
+  line-height: 1.75;
+  border-radius: 16px;
+  margin: 11px 0;
+}
+.bubble p {
+  margin: 10px 0 0;
+}
+.mine {
+  margin-left: auto;
+  background: #fff0b8;
+}
+.suggestions {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  max-height: 94px;
+  overflow: auto;
+  margin: 8px 0;
+  flex: 0 0 auto;
+}
+.suggestions button {
+  font: inherit;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.composer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  gap: 7px;
+  padding: 6px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  flex: 0 0 auto;
+}
+.composer input {
+  width: 100%;
+  min-width: 0;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  background: transparent;
+  padding: 10px 11px;
+  font-size: 14px;
+}
+.composer button {
+  padding: 10px;
+  min-height: 42px;
+}
+.plan {
+  background: var(--soft);
+  border: 1px solid #e5cf7f;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 13px;
+}
+.plan h3 {
+  font-size: 15px;
+  margin: 11px 0 6px;
+}
+.plan p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 7px 0;
+}
+.plan b {
+  font-size: 14px;
+}
+@container tliga-phone (max-width: 899px) {
+  .personas {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+  .persona {
+    padding: 14px;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+  }
+  .persona > svg {
+    width: 57px;
+    height: 65px;
+  }
+  .persona b {
+    font-size: 17px;
+  }
+  .persona small {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 5px;
+    padding-right: 14px;
+  }
+  .check {
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .start {
+    max-width: none;
+    margin-top: 16px;
+  }
+  .header {
+    padding-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .header small {
+    font-size: 9px;
+  }
+  .header > button {
+    font-size: 9px;
+    padding: 9px;
+  }
+  .bubble {
+    max-width: 95%;
+    font-size: 12px;
+    padding: 12px 13px;
+    line-height: 1.7;
+  }
+  .messages {
+    padding-right: 0;
+  }
+  .suggestions button {
+    font-size: 9px;
+    padding: 7px 9px;
+  }
+  .rules {
+    font-size: 10px;
+  }
+  .composer {
+    grid-template-columns: minmax(0, 1fr) 37px;
+    padding: 5px;
+  }
+  .composer input {
+    padding: 8px;
+  }
+  .composer button {
+    min-height: 37px;
+    padding: 8px;
+  }
+  .plan h3 {
+    font-size: 13px;
+  }
+}
+
+@container tliga-phone (max-width:899px) {
+  .persona {
+    padding: 13px;
+    border-radius: 17px;
+    gap: 11px;
+    min-height: 105px;
+  }
+  .persona > svg {
+    width: 58px;
+    height: 77px;
+  }
+  .persona b {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .persona small {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  .chosen {
+    background: #fffbed;
+    border-color: #e1c45d;
+  }
+  .check {
+    height: 16px;
+    width: 16px;
+    right: 13px;
+  }
+  .personas {
+    gap: 10px;
+  }
+  .start {
+    min-height: 43px;
+    margin-top: 16px;
+  }
+}
+
+.personas {
+  margin-top: 3.375px;
+}
+.header h1 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Final HTML chat header: fixed intrinsic utility rows; only messages stretch. */
+.header {
+  padding: 0;
+  border: 0;
+  margin: 1px 0 7px;
+  flex: 0 0 auto;
+  min-height: 43px;
+}
+.header > div {
+  gap: 9px;
+}
+.thumb {
+  height: 43px;
+  width: 36px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  overflow: hidden;
+}
+.thumb > svg {
+  width: 36px;
+  height: 46px;
+}
+.header h1 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+}
+.header small {
+  font-size: 9px;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+.header > button {
+  font-size: 10px;
+  padding: 9px 11px;
+  min-height: 38px;
+  line-height: 1.3;
+  border-radius: 11px;
+  background: var(--card);
+  flex: 0 0 auto;
+}
+.context {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 9px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0 0 5px;
+  flex: 0 0 auto;
+}
+.context > button {
+  font-size: 9px;
+  line-height: 1.5;
+  padding: 4px 0;
+  min-height: 0;
+  color: var(--blue);
+  background: none;
+}
+.rules {
+  font-size: 10px;
+  margin: 0 0 9px;
+  flex: 0 0 auto;
+}
+.rules summary {
+  font-size: 10px;
+  padding: 7px 0;
+  min-height: 30px;
+  line-height: 20.3px;
+}
+.rules > div {
+  font-size: 10px;
+  max-height: 135px;
+  padding: 3px 0 9px;
+}
+@container tliga-phone (max-width:360px) {
+  .header > button {
+    font-size: 9px;
+    padding: 8px 9px;
+  }
+}
+.header > button {
+  font-weight: 400;
+  line-height: 1.45;
+}
+.context > button {
+  font-weight: 400;
+}
+
+.rules {
+  color: var(--muted);
+}
+.rules summary:after {
+  content: '⌄';
+  font-size: 14px;
+  color: var(--muted);
+}
+.rules[open] summary:after {
+  transform: rotate(180deg);
+}
+.rules > .rulesBody {
+  max-height: 135px;
+  overflow: auto;
+  padding: 3px 0 9px;
+  font-size: 10px;
+  line-height: 1.6;
+  overscroll-behavior: contain;
+}
+.rulesBody > div {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 9px;
+  padding: 4px 0;
+}
+.rulesBody b {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.rulesBody p {
+  font-size: 9px;
+  margin: 7px 0 0;
+  color: var(--muted);
+}
+.composer {
+  grid-template-columns: minmax(0, 1fr) 36px;
+  gap: 5px;
+  border-radius: 15px;
+}
+.composer input {
+  font-size: 13px !important;
+  height: 36px;
+  min-height: 36px;
+  padding: 8px 9px;
+  border: 0;
+}
+.composer button {
+  height: 36px;
+  min-height: 36px;
+  padding: 6px;
+  border-radius: 11px;
+}
+.demoCaption {
+  font-size: 8px;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 5px;
+  flex: 0 0 auto;
+}
+
+.bubble {
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 94%;
+  margin: 8px 0;
+  padding: 12px 13px;
+  white-space: pre-line;
+}
+.mine {
+  background: #fff3b5;
+}
+.suggestions > .applySetup {
+  background: var(--yellow);
+  border-color: #f0d44d;
+  color: #4b3f19;
+  font-weight: 650;
+}
+
+.resumeSetup {
+  display: block;
+  width: 100%;
+  background: #fff4ce;
+  color: #8c7438;
+  text-align: left;
+  border: 0;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 9px 11px;
+  margin-bottom: 9px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+:global(html[data-theme='dark']) .resumeSetup {
+  background: #4d4329;
+  color: #e3d49e;
+}

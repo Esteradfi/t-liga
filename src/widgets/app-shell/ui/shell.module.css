@@ -1,0 +1,637 @@
+.shell {
+  height: 100dvh;
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+.sidebar {
+  width: 232px;
+  flex: 0 0 232px;
+  background: var(--card);
+  padding: 27px 17px 20px;
+  border-right: 1px solid var(--line);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.brand,
+.mobilebrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  letter-spacing: -0.7px;
+  font-size: 26px;
+  font-weight: 800;
+}
+.brand {
+  margin: 0 10px 28px;
+}
+.brand i,
+.mobilebrand i {
+  background: var(--yellow);
+  height: 35px;
+  width: 31px;
+  display: grid;
+  place-items: center;
+  color: #181b22;
+  border-radius: 8px 8px 12px 12px;
+  font-size: 23px;
+  font-style: normal;
+}
+.sidebar nav {
+  display: grid;
+  gap: 5px;
+}
+.navitem {
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+.navitem.active {
+  background: #fff2bd;
+  color: #8c732a;
+  font-weight: 600;
+}
+.divider {
+  height: 1px;
+  background: var(--line);
+  margin: 15px 12px;
+}
+.sidebarBottom {
+  margin-top: auto;
+  padding-top: 30px;
+}
+.seasonMini {
+  background: var(--soft);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.seasonMini > span,
+.seasonMini small {
+  color: var(--muted);
+}
+.seasonMini > div {
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background: var(--line);
+  overflow: hidden;
+}
+.seasonMini > div > span {
+  width: 35%;
+  height: 100%;
+  display: block;
+  background: var(--yellow);
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 8px 3px;
+}
+.user > span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e6edff;
+  color: #4d6da6;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-weight: 650;
+}
+.user img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.user b {
+  display: block;
+  font-size: 12px;
+}
+.user small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.workspace {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+  padding: 0 36px;
+  border-bottom: 1px solid var(--line);
+}
+.crumb {
+  font-size: 12px;
+  color: var(--muted);
+}
+.crumb > span {
+  padding: 0 10px;
+}
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.headerActions button,
+.headerActions a {
+  height: 36px;
+  width: 36px;
+  background: none;
+  border: 0;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+.demo {
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--card);
+  padding: 7px 9px;
+  border-radius: 15px;
+}
+.demo i {
+  height: 5px;
+  width: 5px;
+  background: var(--green);
+  border-radius: 50%;
+}
+.content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 29px 36px 40px;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.content > div {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-width: 0;
+}
+.chatContent {
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+.chatContent > div {
+  height: 100%;
+}
+.mobilebrand {
+  display: none;
+}
+.bottomNav {
+  display: none;
+}
+@container tliga-phone (min-width: 1600px) {
+  .sidebar {
+    width: 256px;
+    flex-basis: 256px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .header {
+    padding-inline: 48px;
+  }
+  .content {
+    padding-inline: 48px;
+  }
+}
+@container tliga-phone (max-width: 899px) {
+  .sidebar {
+    display: none;
+  }
+  .header {
+    height: 58px;
+    min-height: 58px;
+    flex-basis: 58px;
+    padding: 0 15px;
+    border-bottom: 0;
+  }
+  .mobilebrand {
+    display: flex;
+    font-size: 21px;
+    gap: 7px;
+  }
+  .mobilebrand i {
+    height: 29px;
+    width: 26px;
+    font-size: 20px;
+  }
+  .crumb {
+    display: none;
+  }
+  .headerActions {
+    gap: 5px;
+  }
+  .headerActions a,
+  .headerActions button {
+    width: 33px;
+  }
+  .content {
+    padding: 7px 16px 18px;
+  }
+  .chatContent {
+    padding-bottom: 12px;
+  }
+  .bottomNav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    height: calc(66px + env(safe-area-inset-bottom));
+    min-height: calc(66px + env(safe-area-inset-bottom));
+    flex: 0 0 calc(66px + env(safe-area-inset-bottom));
+    padding: 5px 8px calc(7px + env(safe-area-inset-bottom));
+    gap: 2px;
+    background: var(--card);
+    border-top: 1px solid var(--line);
+    z-index: 20;
+  }
+  .bottomItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 0;
+    min-height: 44px;
+    text-decoration: none;
+    font-size: 9px;
+    line-height: 1.2;
+    color: var(--muted);
+    border-radius: 12px;
+  }
+  .bottomItem.active {
+    background: #fff3c9;
+    color: #92762c;
+    font-weight: 600;
+  }
+  .demo {
+    font-size: 8px;
+    padding: 6px 7px;
+  }
+  .headerActions svg {
+    width: 20px;
+    height: 20px;
+  }
+  :global(input),
+  :global(select),
+  :global(textarea) {
+    font-size: 16px !important;
+  }
+}
+@container tliga-phone (max-width: 360px) {
+  .content {
+    padding-inline: 12px;
+  }
+  .header {
+    padding-inline: 12px;
+  }
+  .bottomNav {
+    padding-inline: 5px;
+  }
+  .bottomItem {
+    font-size: 8px;
+  }
+  .mobilebrand {
+    font-size: 20px;
+  }
+}
+
+@container tliga-phone (max-width: 899px) {
+  .content :global(.portfolio-trend svg) {
+    overflow: visible;
+  }
+}
+
+@container tliga-phone (max-width: 899px) {
+  :global(.dashboard-grid) {
+    display: flex !important;
+    flex-direction: column;
+    gap: 13px !important;
+  }
+  :global(.dashboard-grid > div) {
+    display: contents;
+  }
+  :global(.dashboard-portfolio) {
+    order: 1;
+  }
+  :global(.dashboard-agent) {
+    order: 2;
+  }
+  :global(.dashboard-season) {
+    order: 5;
+  }
+  :global(.dashboard-history) {
+    order: 6;
+  }
+  :global(.dashboard-holdings) {
+    order: 3;
+  }
+  :global(.dashboard-squad) {
+    order: 4;
+  }
+  :global(.dashboard-grid > div > section),
+  :global(.dashboard-grid > div > a) {
+    width: 100%;
+  }
+}
+
+/* Canonical mobile app viewport. Desktop only adds a presentation bezel. */
+.shell {
+  container-type: inline-size;
+  container-name: tliga-phone;
+  position: relative;
+  isolation: isolate;
+  transform: translateZ(0);
+  width: 414px;
+  max-width: 430px;
+  height: min(880px, calc(100dvh - 40px));
+  min-height: 0;
+  display: flex;
+  border: 9px solid #252930;
+  border-radius: 48px;
+  overflow: hidden;
+  box-shadow:
+    0 30px 85px #26334535,
+    0 0 0 1px #69717c;
+}
+.shell:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105px;
+  height: 22px;
+  border-radius: 0 0 16px 16px;
+  background: #252930;
+  z-index: 50;
+  pointer-events: none;
+}
+.sidebar {
+  display: none !important;
+}
+.workspace {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 37px;
+}
+.header {
+  height: 76px;
+  min-height: 76px;
+  flex: 0 0 76px;
+  padding: 20px 14px 0;
+  border: 0;
+  gap: 8px;
+}
+.mobilebrand {
+  display: flex;
+  font-size: 21px;
+  gap: 7px;
+}
+.mobilebrand i {
+  height: 29px;
+  width: 26px;
+  font-size: 20px;
+}
+.crumb {
+  display: none;
+}
+.headerActions {
+  gap: 4px;
+}
+.headerActions button,
+.headerActions a {
+  height: 36px;
+  width: 33px;
+}
+.headerActions svg {
+  height: 20px;
+  width: 20px;
+}
+.demo {
+  font-size: 8px;
+  padding: 6px 7px;
+}
+.content {
+  padding: 8px 16px 15px;
+  min-height: 0;
+  min-width: 0;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.content > div {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  min-width: 0;
+}
+.chatContent {
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+.bottomNav {
+  position: relative;
+  inset: auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  width: calc(100% - 24px);
+  margin: 0 12px 10px;
+  padding: 7px 5px;
+  gap: 2px;
+  min-height: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  border-radius: 21px;
+  border: 1px solid #ffffffbc;
+  background: color-mix(in srgb, var(--card) 90%, transparent);
+  box-shadow: 0 5px 20px #25344a14;
+  backdrop-filter: blur(20px);
+  z-index: 20;
+}
+.bottomItem {
+  min-height: 46px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 13px;
+  text-decoration: none;
+  font-size: 9px;
+  line-height: 1.1;
+  color: var(--muted);
+}
+.bottomItem.active {
+  background: #fff2c4;
+  color: #927526;
+  font-weight: 600;
+}
+@media (max-width: 599px) {
+  .shell {
+    width: 100%;
+    max-width: none;
+    height: 100dvh;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .shell:before {
+    display: none;
+  }
+  .workspace {
+    border-radius: 0;
+  }
+  .header {
+    height: calc(56px + env(safe-area-inset-top));
+    min-height: calc(56px + env(safe-area-inset-top));
+    flex-basis: calc(56px + env(safe-area-inset-top));
+    padding: env(safe-area-inset-top) 15px 0;
+  }
+  .bottomNav {
+    margin-bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+}
+@container tliga-phone (max-width:360px) {
+  .header {
+    padding-inline: 12px;
+  }
+  .content {
+    padding-inline: 12px;
+  }
+  .bottomNav {
+    width: calc(100% - 20px);
+    margin-inline: 10px;
+    padding-inline: 4px;
+  }
+  .bottomItem {
+    font-size: 8px;
+  }
+  .mobilebrand {
+    font-size: 20px;
+  }
+}
+
+/* Glass navigation overlays the app content; only the pill paints a surface. */
+.shell {
+  --app-nav-height: 62px;
+  --app-nav-bottom: calc(10px + env(safe-area-inset-bottom));
+  --app-nav-clearance: calc(var(--app-nav-height) + var(--app-nav-bottom) + 16px);
+}
+.shell,
+.workspace {
+  background: var(--bg);
+}
+.workspace {
+  position: relative;
+}
+.content {
+  padding-bottom: var(--app-nav-clearance);
+}
+.chatContent {
+  padding-bottom: var(--app-nav-clearance);
+}
+.bottomDock {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex: none;
+  min-width: 0;
+  width: 100%;
+  padding: 0 12px var(--app-nav-bottom);
+  background: transparent;
+  border: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+.bottomDock .bottomNav {
+  width: 100%;
+  height: var(--app-nav-height);
+  min-height: var(--app-nav-height);
+  margin: 0;
+  pointer-events: auto;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+  background-clip: padding-box;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 4px 18px #25344a16;
+}
+@container tliga-phone (max-width:360px) {
+  .bottomDock {
+    padding-inline: 10px;
+  }
+  .bottomDock .bottomNav {
+    width: 100%;
+    margin: 0;
+  }
+}
+:global(html[data-theme='dark']) .bottomDock .bottomNav {
+  background: rgba(37, 43, 52, 0.72);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 18px #0003;
+}
+:global(html[data-theme='dark']) .bottomItem.active {
+  background: #53472a;
+  color: #f4dc91;
+}
+
+.mobilebrand {
+  font-size: 20px;
+}
+.content :global(.dashboard-grid) {
+  gap: 11px !important;
+}
+.notificationBubble {
+  max-width: 94%;
+  padding: 13px 15px;
+  border-radius: 18px;
+  background: #f2f4f7;
+  line-height: 1.6;
+  font-size: 13px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+:global(html[data-theme='dark']) .notificationBubble {
+  background: #353b45;
+  color: #eee;
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" fill="none" role="img" aria-label="Бронзовый Лис"><defs>
+ <linearGradient id="r-frame" x1="20" y1="5" x2="107" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFDFB3"/><stop offset=".3" stop-color="#CC8B48"/><stop offset=".58" stop-color="#875031"/><stop offset=".8" stop-color="#FFDFB3"/><stop offset="1" stop-color="#CC8B48"/></linearGradient>
+ <linearGradient id="r-field" x1="64" y1="12" x2="64" y2="132" gradientUnits="userSpaceOnUse"><stop stop-color="#68452F"/><stop offset="1" stop-color="#302A2C"/></linearGradient>
+ <linearGradient id="r-metal" x1="32" y1="28" x2="91" y2="111" gradientUnits="userSpaceOnUse"><stop stop-color="#FFDFB3"/><stop offset=".48" stop-color="#CC8B48"/><stop offset="1" stop-color="#875031"/></linearGradient>
+ <linearGradient id="r-bright" x1="64" y1="62" x2="64" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#FFDFB3"/><stop offset="1" stop-color="#CC8B48"/></linearGradient>
+ </defs><path d="M64 3 117 27 110 91 95 115 64 141 33 115 18 91 11 27 64 3Z" fill="url(#r-frame)"/>
+ <path d="M64 11 109 32 103 88 89 109 64 131 39 109 25 88 19 32 64 11Z" fill="url(#r-field)"/>
+ <path d="m64 3 53 24-8 5L64 11 19 32l-8-5L64 3Z" fill="#FFDFB3" fill-opacity=".72"/>
+ <path d="m18 91 15 24 31 26v-10l-25-22-14-21-7 3Z" fill="#875031" fill-opacity=".72"/>
+ <path d="m110 91-15 24-31 26v-10l25-22 14-21 7 3Z" fill="#FFDFB3" fill-opacity=".45"/>
+ <path d="m26 26 28 20h20l28-20-3 42-14 30-21 22-21-22-14-30-3-42Z" fill="url(#r-metal)"/>
+ <path d="m33 39 16 13-14 13-2-26Zm62 0L79 52l14 13 2-26Z" fill="#4B352D"/>
+ <path d="m54 46 10 13 10-13 20 20-17 23-13 31-13-31-17-23 20-20Z" fill="url(#r-bright)"/>
+ <path d="m74 46-10 13v61l13-31 17-23-20-20Z" fill="#B8763E"/>
+ <path d="m31 68 25 16 8 24-20-13-13-27Z" fill="#FFE2BC"/>
+ <path d="M97 68 72 84l-8 24 20-13 13-27Z" fill="#EAC18D"/>
+ <path d="m38 67 17 9-11 3-6-12Zm52 0-17 9 11 3 6-12Z" fill="#372C2A"/>
+ <path d="m56 94 8-4 8 4-8 10-8-10Z" fill="#362D2C"/>
+ <path d="m64 104-6 6h12l-6-6Z" fill="#81543C"/>
+ </svg>

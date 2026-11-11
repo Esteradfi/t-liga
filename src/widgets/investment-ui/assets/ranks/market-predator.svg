@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" fill="none" role="img" aria-label="Хищник рынка"><defs>
+ <linearGradient id="r-frame" x1="20" y1="5" x2="107" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE7DF"/><stop offset=".3" stop-color="#EC8B79"/><stop offset=".58" stop-color="#AF424C"/><stop offset=".8" stop-color="#FFE7DF"/><stop offset="1" stop-color="#EC8B79"/></linearGradient>
+ <linearGradient id="r-field" x1="64" y1="12" x2="64" y2="132" gradientUnits="userSpaceOnUse"><stop stop-color="#783544"/><stop offset="1" stop-color="#352632"/></linearGradient>
+ <linearGradient id="r-metal" x1="32" y1="28" x2="91" y2="111" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE7DF"/><stop offset=".48" stop-color="#EC8B79"/><stop offset="1" stop-color="#AF424C"/></linearGradient>
+ <linearGradient id="r-bright" x1="64" y1="62" x2="64" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE7DF"/><stop offset="1" stop-color="#EC8B79"/></linearGradient>
+ </defs><path d="M64 3 117 27 110 91 95 115 64 141 33 115 18 91 11 27 64 3Z" fill="url(#r-frame)"/>
+ <path d="M64 11 109 32 103 88 89 109 64 131 39 109 25 88 19 32 64 11Z" fill="url(#r-field)"/>
+ <path d="m64 3 53 24-8 5L64 11 19 32l-8-5L64 3Z" fill="#FFE7DF" fill-opacity=".72"/>
+ <path d="m18 91 15 24 31 26v-10l-25-22-14-21-7 3Z" fill="#AF424C" fill-opacity=".72"/>
+ <path d="m110 91-15 24-31 26v-10l25-22 14-21 7 3Z" fill="#FFE7DF" fill-opacity=".45"/>
+ <path d="m31 42 6-17 18 13 18 0 18-13 6 17-2 33-12 27-19 19-19-19-12-27-2-33Z" fill="url(#r-metal)"/>
+ <path d="m36 43 4-9 11 9-9 10-6-10Zm56 0-4-9-11 9 9 10 6-10Z" fill="#5C2B3A"/>
+ <path d="m55 38 9 12 9-12 19 17-14 15-14-5-14 5-14-15 19-17Z" fill="url(#r-bright)"/>
+ <path d="m73 38-9 12v15l14 5 14-15-19-17Z" fill="#CF6470"/>
+ <path d="m35 62 17 7 12-4 12 4 17-7-10 29-19 25-19-25-10-29Z" fill="#B74B59"/>
+ <path d="m40 61 17 10-14 3-3-13Zm48 0L71 71l14 3 3-13Z" fill="#382735"/>
+ <path d="m44 67 10 4-9 1-1-5Zm40 0-10 4 9 1 1-5Z" fill="#FFD1A4"/>
+ <path d="m52 76 12-6 12 6 4 11-16 9-16-9 4-11Z" fill="#F2B2A5"/>
+ <path d="m57 78 7-3 7 3-7 7-7-7Z" fill="#4E2939"/>
+ <path d="m48 87 16 6 16-6-7 20H55l-7-20Z" fill="#422636"/>
+ <path d="m51 89 9 3-4 16-5-19Zm26 0-9 3 4 16 5-19Z" fill="#FFEADC"/>
+ <path d="m60 108 4 8 4-8h-8Z" fill="#F6C8B7"/>
+ <path d="m36 80 10 4m-8 7 10-1m44-10-10 4m8 7-10-1" stroke="#EA9D95" stroke-width="2" stroke-linecap="round"/>
+ </svg>

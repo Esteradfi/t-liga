@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" fill="none" role="img" aria-label="Алмазный Кит"><defs>
+ <linearGradient id="r-frame" x1="20" y1="5" x2="107" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#F1FDFF"/><stop offset=".3" stop-color="#A4DDFC"/><stop offset=".58" stop-color="#609CCB"/><stop offset=".8" stop-color="#F1FDFF"/><stop offset="1" stop-color="#A4DDFC"/></linearGradient>
+ <linearGradient id="r-field" x1="64" y1="12" x2="64" y2="132" gradientUnits="userSpaceOnUse"><stop stop-color="#345C84"/><stop offset="1" stop-color="#22374F"/></linearGradient>
+ <linearGradient id="r-metal" x1="32" y1="28" x2="91" y2="111" gradientUnits="userSpaceOnUse"><stop stop-color="#F1FDFF"/><stop offset=".48" stop-color="#A4DDFC"/><stop offset="1" stop-color="#609CCB"/></linearGradient>
+ <linearGradient id="r-bright" x1="64" y1="62" x2="64" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#F1FDFF"/><stop offset="1" stop-color="#A4DDFC"/></linearGradient>
+ </defs><path d="M64 3 117 27 110 91 95 115 64 141 33 115 18 91 11 27 64 3Z" fill="url(#r-frame)"/>
+ <path d="M64 11 109 32 103 88 89 109 64 131 39 109 25 88 19 32 64 11Z" fill="url(#r-field)"/>
+ <path d="m64 3 53 24-8 5L64 11 19 32l-8-5L64 3Z" fill="#F1FDFF" fill-opacity=".72"/>
+ <path d="m18 91 15 24 31 26v-10l-25-22-14-21-7 3Z" fill="#609CCB" fill-opacity=".72"/>
+ <path d="m110 91-15 24-31 26v-10l25-22 14-21 7 3Z" fill="#F1FDFF" fill-opacity=".45"/>
+ <path d="m24 67 18-12 27 2 19 16 9-17-1-16 15 5-5 18-5 8-7 22-17 14-24-1-22-13-7-26Z" fill="url(#r-metal)"/>
+ <path d="m96 40 15 5-5 18-8-3-2-20Z" fill="#E4F8FF"/>
+ <path d="m96 56-10-12-10 1 9 20 11-9Z" fill="#A5DFFD"/>
+ <path d="m24 67 18-12 27 2 19 16-31 6-33-12Z" fill="#DCF5FF"/>
+ <path d="m24 67 33 12 31-6 6 20-17 14-24-1-22-13-7-26Z" fill="#8AC3E7"/>
+ <path d="m30 81 26 10 34-8-5 13-17 8-20-5-18-18Z" fill="#E7F9FF"/>
+ <path d="m50 92 11 4-1 21-12-16 2-9Z" fill="#659DC7"/>
+ <path d="M40 70h7l-2 6h-5v-6Z" fill="#2D5277"/>
+ <path d="m33 85 8 4 8 1" stroke="#517FA4" stroke-width="2.5" stroke-linecap="round"/>
+ <path d="m55 26 9-9 9 9-9 13-9-13Z" fill="#D9F5FF"/>
+ <path d="m55 26 9 2 9-2-9 13-9-13Z" fill="#7CB8E3"/>
+ </svg>

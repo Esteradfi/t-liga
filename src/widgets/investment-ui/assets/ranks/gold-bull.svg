@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" fill="none" role="img" aria-label="Золотой Бык"><defs>
+ <linearGradient id="r-frame" x1="20" y1="5" x2="107" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF4BE"/><stop offset=".3" stop-color="#E3BD58"/><stop offset=".58" stop-color="#A97C23"/><stop offset=".8" stop-color="#FFF4BE"/><stop offset="1" stop-color="#E3BD58"/></linearGradient>
+ <linearGradient id="r-field" x1="64" y1="12" x2="64" y2="132" gradientUnits="userSpaceOnUse"><stop stop-color="#69542D"/><stop offset="1" stop-color="#332D29"/></linearGradient>
+ <linearGradient id="r-metal" x1="32" y1="28" x2="91" y2="111" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF4BE"/><stop offset=".48" stop-color="#E3BD58"/><stop offset="1" stop-color="#A97C23"/></linearGradient>
+ <linearGradient id="r-bright" x1="64" y1="62" x2="64" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF4BE"/><stop offset="1" stop-color="#E3BD58"/></linearGradient>
+ </defs><path d="M64 3 117 27 110 91 95 115 64 141 33 115 18 91 11 27 64 3Z" fill="url(#r-frame)"/>
+ <path d="M64 11 109 32 103 88 89 109 64 131 39 109 25 88 19 32 64 11Z" fill="url(#r-field)"/>
+ <path d="m64 3 53 24-8 5L64 11 19 32l-8-5L64 3Z" fill="#FFF4BE" fill-opacity=".72"/>
+ <path d="m18 91 15 24 31 26v-10l-25-22-14-21-7 3Z" fill="#A97C23" fill-opacity=".72"/>
+ <path d="m110 91-15 24-31 26v-10l25-22 14-21 7 3Z" fill="#FFF4BE" fill-opacity=".45"/>
+ <path d="m43 49-15-5-8-16-1 27 13 14 15-3-4-17Zm42 0 15-5 8-16 1 27-13 14-15-3 4-17Z" fill="url(#r-bright)"/>
+ <path d="m21 42 11 17 13 1-1 8-13-2-10-13V42Zm86 0L96 59l-13 1 1 8 13-2 10-13V42Z" fill="#B08732"/>
+ <path d="m42 43 22-8 22 8 7 26-11 24-4 16-14 11-14-11-4-16-11-24 7-26Z" fill="url(#r-metal)"/>
+ <path d="m64 35 22 8 7 26-14 16-15-8V35Z" fill="#C69A38"/>
+ <path d="m43 61 15 7-4 8-12-4 1-11Zm42 0-15 7 4 8 12-4-1-11Z" fill="#453923"/>
+ <path d="m47 86 17-9 17 9 3 17-20 15-20-15 3-17Z" fill="url(#r-bright)"/>
+ <path d="m47 86 17 7 17-7-3 17-14 10-14-10-3-17Z" fill="#D4AA43"/>
+ <path d="m51 92 8 3-2 6-7-3 1-6Zm26 0-8 3 2 6 7-3-1-6Z" fill="#655027"/>
+ <path d="m56 107 8 4 8-4" stroke="#80632B" stroke-width="3" stroke-linejoin="round"/>
+ </svg>

@@ -1,0 +1,344 @@
+.page {
+  position: relative;
+  padding-bottom: 90px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 20px;
+  align-items: start;
+}
+.board {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 12px 22px;
+}
+.tablehead,
+.row,
+.own {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) 94px 88px;
+  gap: 15px;
+  align-items: center;
+}
+.tablehead {
+  color: var(--muted);
+  font-size: 10px;
+  padding: 22px 0 14px;
+}
+.tablehead > span:nth-last-child(-n + 2) {
+  text-align: right;
+}
+.row {
+  min-height: 75px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.row > b,
+.row > span:last-child,
+.own > b,
+.own > span:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+.place {
+  font-size: 12px;
+  color: var(--muted);
+}
+.name {
+  min-width: 0;
+}
+.name b {
+  font-size: 14px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.name small {
+  display: block;
+  font-size: 10px;
+  color: #b9685e;
+  line-height: 1.4;
+  margin-top: 6px;
+}
+.drawdown {
+  color: var(--muted);
+}
+.season {
+  background: #282e38;
+  border-radius: 20px;
+  padding: 23px;
+  color: white;
+}
+.season small {
+  color: #bcc7d8;
+  font-size: 11px;
+}
+.season h2 {
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 17px 0 8px;
+}
+.season p {
+  font-size: 11px;
+  color: #bcc7d8;
+  line-height: 1.6;
+}
+.own {
+  position: sticky;
+  bottom: -8px;
+  background: var(--card);
+  border: 1px solid #e3c553;
+  border-radius: 15px;
+  padding: 15px 21px;
+  box-shadow: 0 5px 25px #27344810;
+  margin-top: 18px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  z-index: 5;
+}
+.own .place {
+  font-weight: 650;
+  color: var(--text);
+}
+.own .name small {
+  color: #718bab;
+}
+@container tliga-phone (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .season {
+    padding: 14px 17px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 4px 12px;
+  }
+  .season small {
+    grid-column: 1;
+  }
+  .season h2 {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+  .season h2 br {
+    display: none;
+  }
+  .season p {
+    font-size: 10px;
+    margin: 0;
+  }
+  .season img {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    width: 39px;
+    height: 45px;
+  }
+  .board {
+    order: 2;
+  }
+  .season {
+    order: 1;
+  }
+}
+@container tliga-phone (max-width: 899px) {
+  .page {
+    padding-bottom: 0;
+  }
+  .layout {
+    gap: 14px;
+  }
+  .board {
+    padding: 7px 13px;
+  }
+  .tablehead,
+  .row,
+  .own {
+    grid-template-columns: 43px minmax(0, 1fr) 59px 56px;
+    gap: 6px;
+  }
+  .tablehead {
+    font-size: 8px;
+    padding: 16px 0 12px;
+  }
+  .row {
+    min-height: 64px;
+    padding: 10px 0;
+    font-size: 11px;
+  }
+  .name b {
+    font-size: 12px;
+  }
+  .name small {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+  .place {
+    font-size: 10px;
+  }
+  .own {
+    bottom: -8px;
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 11px;
+  }
+  .own .name b {
+    font-size: 11px;
+  }
+  .own .name small {
+    font-size: 9px;
+  }
+}
+@container tliga-phone (max-width: 360px) {
+  .board {
+    padding-inline: 10px;
+  }
+  .tablehead,
+  .row,
+  .own {
+    grid-template-columns: 42px minmax(0, 1fr) 51px 46px;
+    gap: 5px;
+  }
+  .tablehead {
+    font-size: 8px;
+  }
+  .row {
+    font-size: 10px;
+  }
+  .name b {
+    font-size: 11px;
+  }
+  .name small {
+    font-size: 8.5px;
+  }
+  .own {
+    padding-inline: 9px;
+    font-size: 10px;
+  }
+}
+
+.page > div:first-child h1 {
+  font-size: 27px;
+  line-height: 1.45;
+  letter-spacing: -0.65px;
+}
+.season {
+  padding: 14px 16px;
+  gap: 0 12px;
+  border-radius: 18px;
+  grid-template-columns: minmax(0, 1fr) 32px;
+}
+.season small {
+  font-size: 10px;
+  line-height: 1.4;
+}
+.season h2 {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 6px 0 0;
+}
+.season p {
+  font-size: 10px;
+  line-height: 1.4;
+  margin: 3px 0 0;
+}
+.season img {
+  width: 31px;
+  height: 35px;
+}
+.board {
+  border-radius: 26px;
+  padding: 14px;
+}
+.caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  color: var(--muted);
+  margin: 14px 2px 0;
+}
+.note {
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 14px 5px 0;
+}
+
+.rankSlot {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  gap: 9px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+}
+.rankSlot b {
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.rankSlot small {
+  display: block;
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.rankSlot > span:last-child {
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.mySlot {
+  background: #fff8de;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.currentSummary {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 11px 12px;
+  margin-top: 13px;
+}
+.currentSummary b {
+  font-size: 12px;
+  display: block;
+}
+.currentSummary small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.rankFootnote {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+.rulesButton {
+  background: none;
+  color: var(--blue);
+  padding: 10px 0;
+  font-size: 11px;
+  min-height: 34px;
+  border: 0;
+  cursor: pointer;
+}
+.fullRules {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+:global(html[data-theme='dark']) .mySlot {
+  background: #4b4228;
+}

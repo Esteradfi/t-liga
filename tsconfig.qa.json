@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": { "types": ["vite/client", "node", "@testing-library/jest-dom"] },
+  "include": [
+    "tests",
+    ".storybook",
+    "src/**/*.stories.tsx",
+    "vitest.config.ts",
+    "playwright.config.ts"
+  ],
+  "exclude": []
+}

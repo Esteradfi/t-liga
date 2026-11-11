@@ -1,0 +1,213 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: start;
+}
+.grid > * {
+  height: 100%;
+}
+@container tliga-phone (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .grid > * {
+    height: auto;
+  }
+}
+
+.plan {
+  padding: 18px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 21px !important;
+}
+
+.page > div:nth-child(2) {
+  margin-bottom: 17px;
+}
+.page > div:nth-child(2) h1 {
+  line-height: 1.45;
+}
+.page > a:first-child {
+  display: flex;
+  width: max-content;
+}
+
+.plan h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.28;
+}
+.plan > div:nth-child(2) {
+  font-size: 33px !important;
+  line-height: 1.2;
+  margin-top: 15px !important;
+  font-weight: 700;
+}
+.plan > p {
+  font-size: 10px !important;
+  line-height: 1.5;
+  margin-top: 4px !important;
+}
+.plan > ul {
+  margin: 19px 0 !important;
+  gap: 11px !important;
+}
+.plan > ul li {
+  font-size: 11px !important;
+  line-height: 1.55 !important;
+  gap: 7px !important;
+}
+.plan > ul li > svg {
+  width: 13px;
+  height: 13px;
+  margin-top: 2px !important;
+}
+.plan > details {
+  margin-top: 0;
+  padding-top: 0;
+}
+.plan > details > summary {
+  font-size: 11px;
+  min-height: 40px;
+  padding: 9px 0;
+  color: var(--blue);
+  font-weight: 500;
+}
+.plan > div:last-child {
+  margin-top: 10px !important;
+}
+.status {
+  padding: 12px;
+  border-radius: 11px;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+  min-height: 40px;
+}
+
+.plan > details > summary {
+  line-height: 1.45;
+}
+.plan > details > summary::after {
+  content: none;
+}
+.expandedLabel {
+  display: none;
+}
+.plan > details[open] .expandedLabel {
+  display: inline;
+}
+.plan > details[open] .collapsedLabel {
+  display: none;
+}
+.plan > details[open] summary svg {
+  transform: rotate(180deg);
+}
+.plan > div:last-child button {
+  min-height: 43px;
+  font-size: 12px;
+  border-radius: 11px;
+}
+
+.plan > details {
+  border-top: 0;
+}
+.plan > details > summary {
+  border-top: 1px solid var(--line);
+}
+.status {
+  line-height: 1.5;
+}
+
+.plan.featured {
+  border-color: #e7ca54 !important;
+}
+
+.checkoutPrice {
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-top: 15px;
+  white-space: nowrap;
+}
+.checkoutPeriod {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+.checkoutSummary {
+  padding: 14px 0;
+}
+.checkoutSummary b {
+  font-size: 14px;
+}
+.checkoutSummary p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 8px 0;
+}
+.checkoutNotice {
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0 0 17px;
+}
+.tariffTable > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 39px 39px 43px;
+  gap: 5px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+  line-height: 1.5;
+  align-items: center;
+}
+.tariffTable b {
+  text-align: center;
+  font-weight: 550;
+}
+.comparisonNote {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 12px 0;
+}
+.plan > .fullDetails h3 {
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 13px 0 4px;
+}
+.plan > .fullDetails p {
+  font-size: 11px;
+  line-height: 1.6;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+@container tliga-phone (max-width:360px) {
+  .checkoutPrice {
+    font-size: 31px;
+  }
+  .tariffTable > div {
+    grid-template-columns: minmax(0, 1fr) 32px 32px 38px;
+    font-size: 9px;
+    gap: 4px;
+  }
+}
+
+.checkoutNotice {
+  margin: 0;
+  padding: 14px 17px;
+  background: #fff8d9;
+  color: #8b7537;
+}
+:global(html[data-theme='dark']) .checkoutNotice {
+  background: #4a4128;
+  color: #ddcd91;
+}

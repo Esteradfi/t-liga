@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 144" fill="none" role="img" aria-label="Титан Уолл-стрит"><defs>
+ <linearGradient id="r-frame" x1="20" y1="5" x2="107" y2="133" gradientUnits="userSpaceOnUse"><stop stop-color="#DFE6F5"/><stop offset=".3" stop-color="#8E9BB6"/><stop offset=".58" stop-color="#525E7C"/><stop offset=".8" stop-color="#DFE6F5"/><stop offset="1" stop-color="#8E9BB6"/></linearGradient>
+ <linearGradient id="r-field" x1="64" y1="12" x2="64" y2="132" gradientUnits="userSpaceOnUse"><stop stop-color="#353A52"/><stop offset="1" stop-color="#202737"/></linearGradient>
+ <linearGradient id="r-metal" x1="32" y1="28" x2="91" y2="111" gradientUnits="userSpaceOnUse"><stop stop-color="#DFE6F5"/><stop offset=".48" stop-color="#8E9BB6"/><stop offset="1" stop-color="#525E7C"/></linearGradient>
+ <linearGradient id="r-bright" x1="64" y1="62" x2="64" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#DFE6F5"/><stop offset="1" stop-color="#8E9BB6"/></linearGradient>
+ </defs><path d="M64 3 117 27 110 91 95 115 64 141 33 115 18 91 11 27 64 3Z" fill="url(#r-frame)"/>
+ <path d="M64 11 109 32 103 88 89 109 64 131 39 109 25 88 19 32 64 11Z" fill="url(#r-field)"/>
+ <path d="m64 3 53 24-8 5L64 11 19 32l-8-5L64 3Z" fill="#DFE6F5" fill-opacity=".72"/>
+ <path d="m18 91 15 24 31 26v-10l-25-22-14-21-7 3Z" fill="#525E7C" fill-opacity=".72"/>
+ <path d="m110 91-15 24-31 26v-10l25-22 14-21 7 3Z" fill="#DFE6F5" fill-opacity=".45"/>
+ <path d="m39 48 7-15 18-8 18 8 7 15 5 27-11 31-19 15-19-15-11-31 5-27Z" fill="url(#r-metal)"/>
+ <path d="m64 25 18 8 7 15 5 27-11 31-19 15V25Z" fill="#6D7A99"/>
+ <path d="m42 48 22-13 22 13 3 17-25-7-25 7 3-17Z" fill="#C6D2E7"/>
+ <path d="m39 65 25-7 25 7-9 17-16 7-16-7-9-17Z" fill="#273246"/>
+ <path d="m46 68 12 2-2 7-7-3-3-6Zm36 0-12 2 2 7 7-3 3-6Z" fill="#D4E9FF"/>
+ <path d="m58 63 6-5 6 5 5 29-11 17-11-17 5-29Z" fill="url(#r-bright)"/>
+ <path d="m64 58 6 5 5 29-11 17V58Z" fill="#8D9EBB"/>
+ <path d="m39 79 14 13 3 17-11-7-6-23Zm50 0L75 92l-3 17 11-7 6-23Z" fill="#ACBCD4"/>
+ <path d="M59 31V19h10v12m-19 4V24h7v8m14 0v-8h7v11" stroke="#D9B660" stroke-width="3"/>
+ <path d="M58 113h12" stroke="#E4C983" stroke-width="3" stroke-linecap="round"/>
+ </svg>

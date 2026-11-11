@@ -1,0 +1,447 @@
+.marketCard {
+  padding: 19px !important;
+  border-radius: 20px;
+}
+.marketCard > a {
+  padding: 14px 0;
+  min-height: 0;
+  gap: 10px;
+}
+.marketCard > a b {
+  font-size: 12px;
+}
+.marketCard > a small {
+  font-size: 10px;
+}
+.marketCard > a > span:first-child {
+  height: 36px;
+  width: 36px;
+  flex-basis: 36px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.assetRight {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.assetRight > svg {
+  flex: 0 0 48px;
+}
+.assetRight > div {
+  min-width: 65px;
+}
+.instrumentTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+  min-height: 27px;
+}
+.instrumentTop > a {
+  margin: 0;
+  min-height: 27px;
+  padding: 3px 0;
+  font-size: 12px;
+}
+.instrumentTop > span {
+  font-size: 9px;
+  padding: 3px 6px;
+  min-height: 0;
+}
+.instrumentBrand {
+  margin-bottom: 12px;
+  min-height: 36px;
+  gap: 10px;
+}
+.instrumentBrand > div {
+  gap: 10px;
+}
+.instrumentBrand h1 {
+  font-size: 21px !important;
+  line-height: 1.15;
+  margin: 0 !important;
+  letter-spacing: -0.4px;
+}
+.instrumentBrand span[class] {
+  font-size: 10px;
+}
+.instrumentBrand > div > span:first-child {
+  width: 34px;
+  height: 34px;
+  flex-basis: 34px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.instrumentBrand > button {
+  min-height: 30px;
+}
+.instrument :global(section) {
+  padding: 16px;
+  border-radius: 20px;
+}
+.instrument > div[class]:last-of-type {
+  gap: 12px;
+}
+.quote .price {
+  font-size: 31px;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+}
+.quote > p {
+  font-size: 11px !important;
+  line-height: 1.5;
+  margin: 6px 0 0 !important;
+}
+.quote > p > span {
+  font-size: 11px;
+}
+.unit {
+  font-size: 9px;
+  color: var(--muted);
+  margin: 5px 0 9px;
+  line-height: 1.4;
+}
+.instrumentPeriods {
+  margin: 9px 0 11px;
+}
+.instrumentPeriods > div {
+  background: none;
+  padding: 0;
+  gap: 3px;
+}
+.instrumentPeriods button {
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 6px 2px;
+  min-height: 28px;
+}
+.instrumentPeriods button[aria-selected='true'] {
+  background: var(--bg);
+}
+.facts {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  margin-top: 10px;
+  gap: 13px 16px;
+}
+.facts span {
+  font-size: 9px;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.facts b {
+  font-size: 12px;
+  line-height: 1.3;
+}
+.agentIdea {
+  background: #fff7d5 !important;
+  padding: 14px !important;
+}
+.agentIdea h2 {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+}
+.agentIdea p {
+  font-size: 11px !important;
+  line-height: 1.5;
+  margin: 8px 0 11px;
+}
+.agentIdea button {
+  font-size: 12px;
+  min-height: 37px;
+  padding: 10px 13px;
+}
+.instrument h2 {
+  font-size: 16px;
+}
+.instrument section > p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+.instrument > div > div {
+  gap: 12px;
+}
+@container tliga-phone (max-width:360px) {
+  .assetRight {
+    gap: 7px;
+  }
+  .assetRight > svg {
+    width: 35px;
+    flex-basis: 35px;
+  }
+  .assetRight > div {
+    min-width: 58px;
+  }
+  .marketCard > a b {
+    font-size: 11px;
+  }
+}
+:global(html[data-theme='dark']) .agentIdea {
+  background: #463e26 !important;
+}
+
+.marketTitle h1 {
+  line-height: 1.2;
+}
+.marketTitle p {
+  line-height: 1.55;
+  margin-top: 8px;
+}
+
+.marketTitle + div > div > section:first-child h2 {
+  font-size: 23px;
+  line-height: 1.28;
+}
+.agentIdea h2 {
+  font-size: 14px !important;
+  line-height: 1.35;
+}
+.instrument h2 {
+  line-height: 1.35;
+}
+
+.marketTitle > div {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 12px;
+  min-height: 46px;
+  line-height: 1.35;
+  background: var(--card);
+}
+.marketCard > div[role='tablist'] {
+  margin: 20px 0;
+  padding: 0;
+  background: transparent;
+  gap: 4px;
+}
+.marketCard > div[role='tablist'] button {
+  padding: 8px 10px;
+  min-height: 36px;
+  font-size: 11px;
+  line-height: 1.35;
+  flex: 0 0 auto;
+}
+.marketCard > div[role='tablist'] button[aria-selected='true'] {
+  background: var(--bg);
+}
+
+.marketHelp {
+  gap: 15px;
+}
+.marketHelp > section {
+  padding: 19px;
+}
+
+.marketHelp > section:first-child {
+  background: #fff1a8;
+}
+.marketHelp > section:first-child a {
+  background: #282b32;
+  color: #fff;
+}
+:global(html[data-theme='dark']) .marketHelp > section:first-child {
+  background: #625523;
+}
+
+/* Match source asset typography and help-card flow rather than compensating heights. */
+.marketCard > a b {
+  line-height: 1.35;
+}
+.marketCard > a small {
+  font-size: 11px;
+  line-height: 1.45;
+}
+.marketHelp > section h2 {
+  margin-bottom: 0;
+}
+.marketHelp > section:first-child p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 13px 0;
+}
+.marketHelp > section:first-child a {
+  font-size: 13px;
+  line-height: 1.3;
+  padding: 11px 14px;
+}
+.marketHelp > section:last-child > span {
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 5px 8px;
+  min-height: 0;
+}
+.marketHelp > section:last-child p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+.marketHelp > section:last-child button {
+  min-height: 36px;
+  line-height: 1.3;
+}
+
+.ticketTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.ticketTop button {
+  border: 0;
+  background: none;
+  color: var(--blue);
+  font-size: 12px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.ticket {
+  display: grid;
+  gap: 16px;
+  padding: 19px !important;
+}
+.ticketType {
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg);
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+.ticketLots {
+  display: grid;
+  grid-template-columns: 43px minmax(0, 1fr) 43px;
+  gap: 10px;
+  align-items: center;
+}
+.ticketLots button {
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 22px;
+  cursor: pointer;
+}
+.ticketLots input {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  min-height: 50px;
+  padding: 8px;
+  appearance: textfield;
+}
+.ticketLots input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.ticketUnits {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  text-align: center;
+  margin: 8px 0 0;
+}
+.ticketDetails {
+  border-top: 1px solid var(--line);
+  padding-top: 5px;
+}
+.ticketLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+.ticketLine span {
+  color: var(--muted);
+}
+.ticketLine b {
+  white-space: nowrap;
+  font-weight: 550;
+}
+.ticketTotal {
+  border-top: 1px solid var(--line);
+  margin-top: 5px;
+  padding-top: 15px;
+  font-size: 16px;
+}
+.ticketTotal b {
+  font-size: 20px;
+}
+.ticketWarning {
+  font-size: 11px;
+  color: #ac5e39;
+  line-height: 1.5;
+  min-height: 17px;
+}
+.ticket > button {
+  min-height: 42px;
+  font-size: 13px;
+  line-height: 1.3;
+  padding: 11px 14px;
+}
+.ticketNote {
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 11px 3px;
+}
+.confirmTitle {
+  margin: 14px 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.confirmNote {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 12px 0;
+}
+
+.ticketLots input {
+  font-family: inherit;
+  line-height: 1.35;
+  border: 1px solid #e3e6eb;
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--text);
+  width: 100%;
+}
+.ticketTop button {
+  line-height: 1.45;
+}
+.orderTicket > div:nth-child(2) {
+  margin-bottom: 20px;
+}
+.orderTicket > div:nth-child(2) h1 {
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.orderTicket > div:nth-child(2) p {
+  line-height: 1.55;
+  margin: 8px 0 0;
+}
+
+.ticketLots input {
+  font-size: 22px !important;
+}
+.ticket > div:nth-child(2) > div:first-child {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.tradeConfirm > span {
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 5px 8px;
+  min-height: 0;
+  background: #ecf3ff;
+  color: #5f7fa7;
+  border-radius: 6px;
+}
